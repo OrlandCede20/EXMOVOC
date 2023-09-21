@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:configChanges="orientation|screenSize">
+
+    <ImageButton
+        android:id="@+id/btncamara"
+        android:layout_width="67dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/actvcam" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="833dp"
+        android:layout_below="@+id/btncamara"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/btnescuchar"
+        android:layout_width="109dp"
+        android:layout_height="83dp"
+        android:layout_below="@+id/container"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/voz" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="278dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_toEndOf="@+id/btnescuchar"
+        android:text="BIBLOTECA"
+        android:textColor="#0342FF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        tools:layout_editor_absoluteX="274dp" />
+
+</RelativeLayout>
